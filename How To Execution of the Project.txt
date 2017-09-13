@@ -1,0 +1,42 @@
+In angularJS 1.x Execution Process
+-------------------------------------
+1. First of all we need to add 'angular-min.js ' library in  index.html in header tag.
+    ex: <header>
+            <script src="  "></script>
+        </header>
+
+2. And we need to declare 'ng-app=" "' Directive
+    if you're write ng-app directive the browser can understand  This is an Angular Application.
+
+3. Go to Project Directory and choose index.html file double click or open any browser (chrome, firefox IE and etc). then i can get Output my project.
+
+4.After completion writing code. Building process
+    --> Press the  'Shift+F6' keys Enter for the building the code
+    --> then next Ctrl+Shift+B key Enter for the Build the Solution Or also Ctrl+Shift+F6.
+    --> If you getting any proble or error . go to Debugging Process
+        Ctrl+Alt+P for the Debug check
+    --> And also Google chrome debbuging using to press the key 'F12'.
+
+ next
+
+ Angular 2.x Execution Process
+ -----------------------------
+
+ 1. First Install npm
+
+    Ex: npm install -g @angular/cli
+        type it in command prompt after installation of cli
+
+        ng new <project name>
+        cd <project name>
+        ng serve
+
+     i)  create a new Directory and change the directory path for new directory
+     ii) angular cli was install, module, json file , and all libraries are created
+ 2. and we can Generate components, routes, services and pipes with a simple command is 'ng generate'
+
+ 3. Then finally To execute the project by usuing the command is ' ng serve ' and also ' ng start' the i can get my result on browser
+
+ 4.  the default Port id is : http://localhost:4200 . and we can change like below
+
+ 5.  ng serve --host 0.0.0.0 --port 4242

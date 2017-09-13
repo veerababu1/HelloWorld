@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="mainApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+        <script src="angular-route.min.js"></script>
+        <script type="text/javascript" src="module.js"></script>
+        <script type="text/javascript" src="service.js"></script>
+        <link href="styles1.css" rel="stylesheet"/>
+
+
+    </head>
+    <div>
+
+    <body ng-controller="myController">
+        Enter Text : <input type="text" ng-model="text" id="3" /><br><br>
+        <!-- here Toway Databinding is happen-->
+        <div><b>{{message}}</b></div>
+        <div><b>{{text}}</b></div>
+        <br><br><hr>
+        <!-- Route-->
+        <a href="route/route.html"><b>Click here</b></a><br>
+        <ng-view></ng-view><br><hr>
+
+        <!-- services Ex -->
+    <table>
+            <tr>
+                <td>Enter String :</td>
+                <td><input type="text" ng-model="input"  placeholder="Ex: HelloWorld"/></td>
+            </tr>
+            <tr>
+                <td>Result : </td>
+                <td><input type="text" ng-model="output" placeholder="Ex: Hello  World" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" ng-click="modifiedString(input)" value="Process String"/> </td>
+            </tr>
+        </table>
+    </body>
+<br><hr>
+    <!-- $scope annd $rootscope -->
+    <div ng-controller="myController">
+        message :{{message}}<br>
+        Scope :{{scope}}<br>
+        Scope1 : {{scope1}}
+    </div>
+
+    <div ng-controller="ctrl">
+        message :{{message}}<br>
+        Scope :{{scope}}<br>
+        Scope1 : {{scope1}}
+    </div>
+    </div>
+</html>
